@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clc">
+        <table class="doc">
+            <tr>
+                <th id="display" colspan="4" style="background-color: rgb(255, 255, 255);">
+                    <input type="text" class="dis" name="dis" id="dis" placeholder="0">
+                </th>
+            </tr>
+            <tr>
+                <td><button onclick="cl()" value="cl"><</button> </td>
+                <td><button onclick="div()" value="/">/</button> </td>
+                <td><button onclick="mul()" value="*">x</button> </td>
+                <td style="background-color: rgb(255, 40, 40);"><button onclick="ac()" >AC</button> </td>
+            </tr>
+            <tr>
+                <td><button onclick="seven()" value="7">7</button> </td>
+                <td><button onclick="eight()" value="8">8</button> </td>
+                <td><button onclick="nine()" value="9">9</button> </td>
+                <td><button onclick="sub()" value="-">-</button> </td>
+            </tr>
+            <tr>
+                <td><button onclick="four()" value="4">4</button> </td>
+                <td><button onclick="five()" value="5">5</button> </td>
+                <td><button onclick="six()" value="6">6</button> </td>
+                <td><button onclick="add()" value="+">+</button> </td>
+            </tr>
+            <tr>
+                <td><button value="1" onclick="one()">1</button> </td>
+                <td><button onclick="two()" value="2">2</button> </td>
+                <td><button onclick="three()" value="3">3</button> </td>
+                <td rowspan="2"><button onclick="eqval()" value="=">=</button> </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="ziro()" value="0">0</button> </td>
+                <td><button value="." onclick="point()">.</button> </td>
+            
+            </tr>
+        </table>
+
+
+
+        <script>
+            function one() {
+                document.getElementById("dis").value += '1'
+            }
+            function two() {
+                document.getElementById("dis").value += '2'
+            }
+            function three() {
+                document.getElementById("dis").value += '3'
+            }
+            function add() {
+                document.getElementById("dis").value += '+'
+            }
+    
+            function four() {
+                document.getElementById("dis").value += '4'
+            }
+            function five() {
+                document.getElementById("dis").value += '5'
+            }
+            function six() {
+                document.getElementById("dis").value += '6'
+            }
+            function sub() {
+                document.getElementById("dis").value += '-'
+            }
+    
+            function seven() {
+                document.getElementById("dis").value += '7'
+            }
+            function eight() {
+                document.getElementById("dis").value += '8'
+            }
+            function nine() {
+                document.getElementById("dis").value += '9'
+            }
+            function mul() {
+                document.getElementById("dis").value += '*'
+            }
+            function cl() {
+                document.getElementById("dis").value =  document.getElementById("dis").value.slice(0,-1)
+            }
+    
+            function ziro() {
+                document.getElementById("dis").value += '0'
+            }
+            function div() {
+                document.getElementById("dis").value += '/'
+            }
+            function point() {
+                document.getElementById("dis").value += '.'
+            }
+            function eqval() {
+                document.getElementById("dis").value = eval(document.getElementById("dis").value)
+            }
+            function ac(){
+                document.getElementById("dis").value = ' '
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

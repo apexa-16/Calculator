@@ -1,0 +1,71 @@
+body{
+    background:  rgba(5, 13, 59, 0.734);
+}
+
+.clc{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(5, 13, 59, 0.271),
+    3px 3px 20px rgba(5, 13, 59, 0.271);
+}
+.clc:hover{
+    box-shadow: 3px 3px 10px white,
+    3px 3px 20px white;
+}
+table{
+    border: 1px solid;
+    padding: 5%;
+    border-radius: 5px;
+    background-color: rgb(5, 13, 59);
+
+}
+.dis{
+    top: 1px;
+    width: 98%;
+    text-align: right;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    height: 45px;
+}
+#display{
+        height: 50px;
+        border-radius: 2px;
+}
+
+
+tr td{
+    transform: scale(1);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(176, 173, 173, 0.389);
+    border-radius: 2px;
+    animation: come .9s;
+}
+@keyframes come {
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+button{
+    height: 100%;
+    width: 100%;
+    font-weight: bolder;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+td:hover button{
+    text-shadow: 3px 3px 10px rgb(248, 255, 197),
+                    3px 3px 20px rgb(229, 235, 180);
+    font-size: 25px;
+
+}
+td:hover{
+    transform: scale(0.96);
+}
